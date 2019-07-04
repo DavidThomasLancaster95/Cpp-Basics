@@ -1,0 +1,16 @@
+class Board
+{
+
+private:
+	vector<vector<SquareData> > my2DArray;  // initialize it here
+	const int Rows = 50;
+	const int Cols = 2;
+	
+public:
+	
+	Board() {
+		my2DArray.resize(Rows);               // Resize it here
+		for (int i = 0; i < Rows; ++i)
+			my2DArray[i].resize(Cols);
+	}
+};
